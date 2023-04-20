@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap");
+
+body {
+  background: hsl(185, 41%, 84%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 0 0;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Space Mono", monospace;
+}
+main {
+  width: 100%;
+  background: hsl(0, 0%, 100%);
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+main span {
+  color: hsl(186, 14%, 43%);
+}
+.bill label {
+  width: 100%;
+  background: hsl(189, 41%, 97%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: 2px solid hsl(189, 41%, 97%);
+}
+input {
+  text-align: end;
+  border: none;
+  outline: 0;
+  background: hsl(189, 41%, 97%);
+  color: hsl(185, 41%, 84%);
+  font-size: 24px;
+}
+.bill label input {
+  color: hsl(191, 86%, 16%);
+}
+.bill label input::placeholder {
+  color: hsl(185, 41%, 84%);
+}
+.zero {
+  float: right;
+  color: rgb(247, 100, 100);
+  display: none;
+}
+.tips {
+  margin: 30px auto;
+}
+.tips .inputs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 15px;
+}
+.tips .inputs input {
+  width: 100%;
+  background: hsl(191, 86%, 16%);
+  border-radius: 5px;
+  padding: 10px 0;
+  text-align: center;
+}
+.tips .inputs input:hover,
+button:hover {
+  background: hsl(172, 67%, 45%);
+  color: hsl(191, 86%, 16%);
+  cursor: pointer;
+}
+.tips .inputs .custom {
+  background: hsl(189, 41%, 97%);
+}
+.tips .inputs .custom:hover {
+  background: hsl(189, 41%, 97%);
+  color: hsl(191, 86%, 16%);
+}
+.result {
+  background: hsl(191, 86%, 16%);
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+.result div label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0 30px;
+  color: hsl(0, 0%, 100%);
+}
+.result div label input {
+  background: none;
+  color: hsl(172, 67%, 45%);
+  width: 50%;
+  font-size: 30px;
+}
+button {
+  width: 100%;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 24px;
+  background: hsl(188, 82%, 22%);
+  color: hsl(185, 29%, 25%);
+}
+@media (min-width: 850px) {
+  body {
+    max-width: 1440px;
+    padding-bottom: 70px;
+  }
+  main {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .tips .inputs {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .content {
+    padding: 10px;
+  }
+  .result {
+    margin-top: 0;
+    padding: 40px;
+  }
+  button {
+    margin-top: 120px;
+  }
+}

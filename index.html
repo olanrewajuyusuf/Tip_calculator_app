@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <img src="logo.svg" alt="" />
+    <main>
+      <section class="content">
+        <div class="bill">
+          <span>Bill</span>
+          <label>
+            <img src="icon-dollar.svg" alt="dollar" /><input
+              type="text"
+              id="bill"
+              placeholder="0"
+            />
+          </label>
+        </div>
+        <div class="tips">
+          <span>Select Tip %</span>
+          <div class="inputs">
+            <input type="text" id="tip" value="5%" />
+            <input type="text" id="tip" value="10%" />
+            <input type="text" id="tip" value="15%" />
+            <input type="text" id="tip" value="25%" />
+            <input type="text" id="tip" value="50%" />
+            <input type="text" id="tip" class="custom" placeholder="Custom" />
+          </div>
+        </div>
+        <div class="bill">
+          <span>Number of people</span><span class="zero">Can't be zero</span>
+          <label>
+            <img src="icon-person.svg" alt="people" /><input
+              type="text"
+              id="number"
+              placeholder="0"
+            />
+          </label>
+        </div>
+      </section>
+      <section class="result">
+        <div>
+          <label
+            ><div>Tip Amount <br /><span>/ person</span></div>
+            <input type="text" id="total-amount" value="$0.00"
+          /></label>
+        </div>
+        <div>
+          <label
+            ><div>Total <br /><span>/ person</span></div>
+            <input type="text" id="total-person" value="$0.00"
+          /></label>
+        </div>
+        <button>RESET</button>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
