@@ -1,4 +1,4 @@
-const tips = document.querySelectorAll("#tip");
+const tips = document.querySelectorAll(".tip");
 const custom = document.querySelector(".tips .inputs .custom");
 const label = document.querySelectorAll(".bill label");
 const num = document.querySelector("#number");
